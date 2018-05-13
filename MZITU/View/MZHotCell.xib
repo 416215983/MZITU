@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MZHotCell" customModule="MZITU" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="358"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="255" height="358"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uFQ-d1-hvY">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="314"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGI-MY-zw7">
+                        <rect key="frame" x="0.0" y="314" width="255" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opI-TE-Avs">
+                                <rect key="frame" x="5" y="5" width="245" height="16"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="opI-TE-Avs" firstAttribute="top" secondItem="XGI-MY-zw7" secondAttribute="top" constant="5" id="1j6-EO-65N"/>
+                            <constraint firstItem="opI-TE-Avs" firstAttribute="leading" secondItem="XGI-MY-zw7" secondAttribute="leading" constant="5" id="ANA-2T-Mwk"/>
+                            <constraint firstAttribute="height" constant="44" id="DYK-wM-hOI"/>
+                            <constraint firstAttribute="trailing" secondItem="opI-TE-Avs" secondAttribute="trailing" constant="5" id="DyK-Zo-RS4"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATX-eM-Lhl">
+                        <rect key="frame" x="205" y="10" width="40" height="20"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="b2g-uM-tUz"/>
+                            <constraint firstAttribute="width" secondItem="ATX-eM-Lhl" secondAttribute="height" multiplier="2:1" id="c57-3P-Y72"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="44"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XGI-MY-zw7" secondAttribute="bottom" id="1Gj-Da-eby"/>
+                <constraint firstItem="uFQ-d1-hvY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1OC-Ci-TZL"/>
+                <constraint firstItem="XGI-MY-zw7" firstAttribute="top" secondItem="uFQ-d1-hvY" secondAttribute="bottom" id="8Sc-Kp-XxD"/>
+                <constraint firstAttribute="trailing" secondItem="ATX-eM-Lhl" secondAttribute="trailing" constant="10" id="TZK-Bi-hx6"/>
+                <constraint firstItem="XGI-MY-zw7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="auh-9Z-jf3"/>
+                <constraint firstItem="uFQ-d1-hvY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="brl-hv-HDm"/>
+                <constraint firstItem="ATX-eM-Lhl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="gOz-mE-zLg"/>
+                <constraint firstAttribute="trailing" secondItem="uFQ-d1-hvY" secondAttribute="trailing" id="ns1-kI-hWg"/>
+                <constraint firstAttribute="trailing" secondItem="XGI-MY-zw7" secondAttribute="trailing" id="wIV-iX-92Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="255" height="358"/>
+            <connections>
+                <outlet property="MZ_imageView" destination="uFQ-d1-hvY" id="PdZ-BS-Lw1"/>
+                <outlet property="MZ_pageButton" destination="ATX-eM-Lhl" id="Rn6-Qz-7B3"/>
+                <outlet property="MZ_titleLabel" destination="opI-TE-Avs" id="1vb-j4-Bim"/>
+            </connections>
+            <point key="canvasLocation" x="136.5" y="208"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MZSearchCell" customModule="MZITU" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="76"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bdY-q5-Gts">
+                        <rect key="frame" x="18" y="0.0" width="54" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bdY-q5-Gts" secondAttribute="height" multiplier="1:1" id="0Fs-lX-xfk"/>
+                            <constraint firstAttribute="width" constant="54" id="8IV-Fu-4JP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyz-1t-IhU">
+                        <rect key="frame" x="27.5" y="59" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bdY-q5-Gts" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6pj-Ub-joM"/>
+                <constraint firstItem="bdY-q5-Gts" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FqE-Y1-E1L"/>
+                <constraint firstItem="Jyz-1t-IhU" firstAttribute="top" secondItem="bdY-q5-Gts" secondAttribute="bottom" constant="5" id="p0g-KF-Ti2"/>
+                <constraint firstItem="Jyz-1t-IhU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="x90-ia-APC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="90" height="76"/>
+            <connections>
+                <outlet property="mz_searchImageView" destination="bdY-q5-Gts" id="dyO-yq-1JM"/>
+                <outlet property="mz_searchTitleLabel" destination="Jyz-1t-IhU" id="aBE-b7-wYn"/>
+            </connections>
+            <point key="canvasLocation" x="110" y="78"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MZSearchViewController" customModule="MZITU" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="pah-f5-d7b" id="1rV-lN-3xu"/>
+                <outlet property="flowLayout" destination="82c-bZ-NVL" id="Jkv-LY-Voz"/>
+                <outlet property="searchBar" destination="i5g-KT-LxS" id="3LI-Q0-dpe"/>
+                <outlet property="view" destination="iN0-l3-epB" id="nOM-gJ-biQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pah-f5-d7b">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="82c-bZ-NVL">
+                        <size key="itemSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="HWc-YF-YAK"/>
+                        <outlet property="delegate" destination="-1" id="VxN-v6-60Q"/>
+                    </connections>
+                </collectionView>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="搜一搜,看一看" translatesAutoresizingMaskIntoConstraints="NO" id="i5g-KT-LxS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="5Of-3V-ccJ"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Hgx-OO-85c"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i5g-KT-LxS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LWs-Rh-eFq"/>
+                <constraint firstItem="pah-f5-d7b" firstAttribute="top" secondItem="i5g-KT-LxS" secondAttribute="bottom" id="dkQ-xx-yN1"/>
+                <constraint firstItem="i5g-KT-LxS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eQY-Ae-wG0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pah-f5-d7b" secondAttribute="trailing" id="mHF-L0-em0"/>
+                <constraint firstItem="pah-f5-d7b" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tQp-Lq-sxc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pah-f5-d7b" secondAttribute="bottom" id="wQl-qz-ywU"/>
+                <constraint firstItem="i5g-KT-LxS" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="xHf-Nr-Jdu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

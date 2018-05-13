@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" "4.7.2"
+github "alibaba/HandyJSON" "4.1.1"
+github "eggswift/pull-to-refresh" "2.7"
+github "onevcat/Kingfisher" "4.7.0"
+github "suzuki-0000/SKPhotoBrowser" "5.1.0"
