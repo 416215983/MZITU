@@ -103,6 +103,7 @@ class MZSelfieViewController: UIViewController,UICollectionViewDelegate,UICollec
             self.collectionView.es.stopLoadingMore()
             switch(response.result) {
             case .success(_):
+                self.page += 1
                 let value = response.result.value as AnyObject
                 if value.isKind(of: NSArray.self){
                     let model = JSONDeserializer<MZModel>.deserializeModelArrayFrom(array: (value as! Array))
