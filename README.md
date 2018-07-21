@@ -1,8 +1,7 @@
 # MZITU
 仿Android妹子图写的iOS版本
 
-![image](https://github.com/416215983/MZITU/blob/master/WX20180721-111856%402x.png)
-![image](https://github.com/416215983/MZITU/blob/master/WX20180721-112120%402x.png)
+![image](https://github.com/416215983/MZITU/blob/master/WX20180721-111856%402x.png) ![image](https://github.com/416215983/MZITU/blob/master/WX20180721-112120%402x.png)
 
 使用Swift语法 OC太习惯了 换个口味试试
 
