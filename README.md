@@ -13,4 +13,3 @@
     github "suzuki-0000/SKPhotoBrowser"     //图片浏览    哎呦不错哦
     github "eggswift/pull-to-refresh"       //上拉刷新下拉加载的   有Bug貌似没找到比它好使的
 
-妹子图后台给的数据不怎么规范 有些数据是硬转的用了正则，最后的自拍模块数据转换太复杂懒得做了
